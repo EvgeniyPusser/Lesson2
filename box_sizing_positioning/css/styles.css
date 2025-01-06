@@ -1,9 +1,9 @@
  /* Main container for the rings */
  .boxes {
-   display: flex;
-   justify-content: space-around;
+  /* display: flex; */
+    /* justify-content: space-around; */
    /* Distribute rings evenly */
-   align-items: center;
+  /* align-items: center; */
    height: 100vh;
    /* Full height of the viewport */
    background-color: #f0f0f0;
@@ -19,49 +19,59 @@
    /* Thickness of the ring */
    border-radius: 50%;
    /* Make it circular */
-   position: relative;
+  /* position: relative; */
    /* For positioning inner circle */
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  /* display: flex; */
+    /* justify-content: center;
+                                                                                                                                             align-items: center; */
 
  }
 
  /* Colors for the rings */
  .box1 {
    border-color: red;
-   left: 540px;
-   bottom: -94px;
+    left: 653px;
+      bottom: 370px;
+      position: absolute;
  }
 
  .box2 {
    border-color: blue;
-   left: 187px;
+  left: 700px;
    z-index: 20;
+  position: absolute;
+    bottom: 287px;
  }
 
  .box3 {
    border-color: green;
+  position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 1;
  }
 
  .box4 {
    border-color: yellow;
-   right: 187px;
-   z-index: 20;
+  right: 515px;
+    top: 30%;
+    z-index: 1;
+    position: absolute
  }
 
  .box5 {
    border-color: violet;
-   right: 540px;
-   bottom: -94px;
-
+  right: 570px;
+    bottom: 287px;
+    position: absolute;
+    z-index: 3;
  }
 
  /* Inner circle */
  .inner-circle {
-   width: 80px;
+  width: 30px;
    /* Diameter of the inner circle */
-   height: 80px;
+  height: 0px;
    background-color: #f0f0f0;
    /* Match the background color */
    border-radius: 50%;
